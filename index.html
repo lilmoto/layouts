@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagoona</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <img src="img/logo.svg" alt="Logo" class="logo">
+        <div class="container header_container">
+            <div class="header-top">
+                <img src="img/logo.svg" alt="Logo" class="header-logo">
             
-            <a class="contact_number header_contact_number" href="tel:+74953225448">
-                +7&nbsp;495 322-54-48
-            </a>
+                <a class="contact_number header_contact_number" href="tel:+74953225448">
+                    +7&nbsp;495 322-54-48
+                </a>
 
-            <a href="#" class="user_account">
-                Личный кабинет
-            </a>
+                <a href="#" class="user_account">
+                    Личный кабинет
+                </a>
+            </div>
 
-            <nav class="header_nav">
-                <ul class="header_nav_list">
-                    <li class="header_nav_item"><a href="#">О&nbsp;нас</a></li>
-                    <li class="header_nav_item"><a href="#">Услуги</a></li>
-                    <li class="header_nav_item"><a href="#">Преимущества</a></li>
-                    <li class="header_nav_item"><a href="#">Размещение</a></li>
-                    <li class="header_nav_item"><a href="#">Блог</a></li>
-                    <li class="header_nav_item"><a href="#">Контакты</a></li>
-                </ul>
-
-                <button class="btn header_btn">Хочу тур</button>
-                <button class="btn header_btn">Обратный звонок</button>
-            </nav>
+            <div class="header-bottom">
+                <nav class="header_nav">
+                    <ul class="header_nav_list list-reset">
+                        <li class="header_nav_item"><a href="#">О&nbsp;нас</a></li>
+                        <li class="header_nav_item"><a href="#">Услуги</a></li>
+                        <li class="header_nav_item"><a href="#">Преимущества</a></li>
+                        <li class="header_nav_item"><a href="#">Размещение</a></li>
+                        <li class="header_nav_item"><a href="#">Блог</a></li>
+                        <li class="header_nav_item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>    
+                    <button class="btn header_btn btn-tour">Хочу тур</button>
+                    <button class="btn header_btn">Обратный звонок</button>                
+            </div>
         </div>
     </header>
 
@@ -42,27 +47,33 @@
                     Спецпредложения
                 </h2>
 
-                <ul class="special_offers_list">
+                <ul class="special_offers_list list-reset">
                     <li class="special_offers_item">
-                        <h3 class="special_offers_item_heading">
-                            Мальдивские острова
-                        </h3>
-                        <span class="price">от&nbsp;55&nbsp;000&nbsp;₽</span>
-                        <a class="special_offers_item_link" href="#">Подробнее</a>
+                        <div class="special_offers_wrapper">
+                            <h3 class="special_offers_item_heading">
+                                Мальдивские острова
+                            </h3>
+                            <span class="price">от&nbsp;55&nbsp;000&nbsp;₽</span>
+                            <a class="special_offers_item_link" href="#">Подробнее</a>
+                        </div>
                     </li>
                     <li class="special_offers_item">
-                        <h3 class="special_offers_item_heading">
-                            Номера категории люкс
-                        </h3>
-                        <span class="price">от&nbsp;5&nbsp;000&nbsp;₽</span>
-                        <a class="special_offers_item_link" href="#">Подробнее</a>
+                        <div class="special_offers_wrapper">
+                            <h3 class="special_offers_item_heading">
+                                Номера категории люкс
+                            </h3>
+                            <span class="price">от&nbsp;5&nbsp;000&nbsp;₽</span>
+                            <a class="special_offers_item_link" href="#">Подробнее</a>
+                        </div>
                     </li>
                     <li class="special_offers_item">
-                        <h3 class="special_offers_item_heading">
-                            Горящий тур на&nbsp;остров Крит
-                        </h3>
-                        <span class="price">от&nbsp;30&nbsp;000&nbsp;₽</span>
-                        <a class="special_offers_item_link" href="#">Подробнее</a>
+                        <div class="special_offers_wrapper">
+                            <h3 class="special_offers_item_heading">
+                                Горящий тур на&nbsp;остров Крит
+                            </h3>
+                            <span class="price">от&nbsp;30&nbsp;000&nbsp;₽</span>
+                            <a class="special_offers_item_link" href="#">Подробнее</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -86,9 +97,9 @@
                     Услуги
                 </h2>
 
-                <ul class="services_list">
+                <ul class="services_list list-reset">
                     <li class="services_item">
-                        <img src="img/services_image_1.png" alt="photo" class="services_img">
+                        <!-- <img src="img/services_image_1.png" alt="photo" class="services_img"> -->
                         <a href="#" class="services_link">
                             <h3 class="services_item_heading">
                                 Эксклюзивное обслуживание
@@ -99,7 +110,7 @@
                         </p>
                     </li>
                     <li class="services_item">
-                        <img src="img/services_image_2.png" alt="photo" class="services_img">
+                        <!-- <img src="img/services_image_2.png" alt="photo" class="services_img"> -->
                         <a href="" class="services_link">
                             <h3 class="services_item_heading">
                                 Аренда банкетных залов
@@ -110,7 +121,7 @@
                         </p>
                     </li>
                     <li class="services_item">
-                        <img src="img/services_image_3.png" alt="photo" class="services_img">
+                        <!-- <img src="img/services_image_3.png" alt="photo" class="services_img"> -->
                         <a href="" class="services_link">
                             <h3 class="services_item_heading">
                                 Сауны, бассейны, бани, фитнес-залы
@@ -121,7 +132,7 @@
                         </p>
                     </li>
                     <li class="services_item">
-                        <img src="img/services_image_4.png" alt="photo" class="services_img">
+                        <!-- <img src="img/services_image_4.png" alt="photo" class="services_img"> -->
                         <a href="" class="services_link">
                             <h3 class="services_item_heading">
                                 Охраняемые автомобильные стоянки
@@ -141,7 +152,7 @@
                     Преимущества
                 </h2>
 
-                <ul class="advantages_list">
+                <ul class="advantages_list list-reset">
                     <li class="advantages_item">
                         <img src="img/bathtub.svg" alt="photo" class="advantages_img">
                         <p class="text advantages_descr">
@@ -200,169 +211,185 @@
                     Размещение
                 </h2>
 
-                <ul class="placement_list">
+                <ul class="placement_list list-reset">
                     <li class="placement_item">
-                        <img src="img/espanola.png" alt="photo" class="placement_img">
-                        <p class="text price">
-                            <span class="placement_item_descr">от</span><span class="placement_item_price">4&nbsp;698&nbsp;₽</span>/ ночь
-                        </p>
-                        <div class="star_wrapper">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/empty_star.svg" alt="star" class="star_img">
+                        <div class="placement_item_content_wrapper">
+                            <img src="img/espanola.png" alt="photo" class="placement_img">
+                            <p class="text price">
+                                <span class="placement_item_descr">от</span><span class="placement_item_price">4&nbsp;698&nbsp;₽</span>/ ночь
+                            </p>
+                            <div class="star_wrapper">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/empty_star.svg" alt="star" class="star_img">
+                            </div>
+                            <h3 class="placement_item_heading">
+                                Lagoona española
+                            </h3>
+                            <p class="text placement_item_city">
+                                Барселона, Испания
+                            </p>
+                            <button class="btn placement_item_btn">Номера</button>
                         </div>
-                        <h3 class="placement_item_heading">
-                            Lagoona española
-                        </h3>
-                        <p class="text placement_item_city">
-                            Барселона, Испания
-                        </p>
-                        <button class="btn placement_item_btn">Номера</button>
                     </li>
                     <li class="placement_item">
-                        <img src="img/son_tipicas.png" alt="photo" class="placement_img">
-                        <p class="text price">
-                            <span class="placement_item_descr">от</span><span class="placement_item_price">5&nbsp;148&nbsp;₽</span>/ ночь
-                        </p>
-                        <div class="star_wrapper">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/empty_star.svg" alt="star" class="star_img">
+                        <div class="placement_item_content_wrapper">
+                            <img src="img/son_tipicas.png" alt="photo" class="placement_img">
+                            <p class="text price">
+                                <span class="placement_item_descr">от</span><span class="placement_item_price">5&nbsp;148&nbsp;₽</span>/ ночь
+                            </p>
+                            <div class="star_wrapper">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/empty_star.svg" alt="star" class="star_img">
+                            </div>
+                            <h3 class="placement_item_heading">
+                                Lagoona son t&iacute;picas
+                            </h3>
+                            <p class="text placement_item_city">
+                                Барселона, Испания
+                            </p>
+                            <button class="btn placement_item_btn">Номера</button>
                         </div>
-                        <h3 class="placement_item_heading">
-                            Lagoona son t&iacute;picas
-                        </h3>
-                        <p class="text placement_item_city">
-                            Барселона, Испания
-                        </p>
-                        <button class="btn placement_item_btn">Номера</button>
                     </li>
                     <li class="placement_item">
-                        <img src="img/de_la_guerra.png" alt="photo" class="placement_img">
-                        <p class="text price">
-                            <span class="placement_item_descr">от</span><span class="placement_item_price">6&nbsp;254&nbsp;₽</span>/ ночь
-                        </p>
-                        <div class="star_wrapper">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
+                        <div class="placement_item_content_wrapper">
+                            <img src="img/de_la_guerra.png" alt="photo" class="placement_img">
+                            <p class="text price">
+                                <span class="placement_item_descr">от</span><span class="placement_item_price">6&nbsp;254&nbsp;₽</span>/ ночь
+                            </p>
+                            <div class="star_wrapper">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                            </div>
+                            <h3 class="placement_item_heading">
+                                Lagoona de&nbsp;la&nbsp;guerra
+                            </h3>
+                            <p class="text placement_item_city">
+                                Барселона, Испания
+                            </p>
+                            <button class="btn placement_item_btn">Номера</button>
                         </div>
-                        <h3 class="placement_item_heading">
-                            Lagoona de&nbsp;la&nbsp;guerra
-                        </h3>
-                        <p class="text placement_item_city">
-                            Барселона, Испания
-                        </p>
-                        <button class="btn placement_item_btn">Номера</button>
                     </li>
                     <li class="placement_item">
-                        <img src="img/mentira.png" alt="photo" class="placement_img">
-                        <p class="text price">
-                            <span class="placement_item_descr">от</span><span class="placement_item_price">6&nbsp;320&nbsp;₽</span>/ ночь
-                        </p>
-                        <div class="star_wrapper">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
+                        <div class="placement_item_content_wrapper">
+                            <img src="img/mentira.png" alt="photo" class="placement_img">
+                            <p class="text price">
+                                <span class="placement_item_descr">от</span><span class="placement_item_price">6&nbsp;320&nbsp;₽</span>/ ночь
+                            </p>
+                            <div class="star_wrapper">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                            </div>
+                            <h3 class="placement_item_heading">
+                                Lagoona mentira piadosa
+                            </h3>
+                            <p class="text placement_item_city">
+                                Барселона, Испания
+                            </p>
+                            <button class="btn placement_item_btn">Номера</button>
                         </div>
-                        <h3 class="placement_item_heading">
-                            Lagoona mentira piadosa
-                        </h3>
-                        <p class="text placement_item_city">
-                            Барселона, Испания
-                        </p>
-                        <button class="btn placement_item_btn">Номера</button>
                     </li>
                     <li class="placement_item">
-                        <img src="img/empujar.png" alt="photo" class="placement_img">
-                        <p class="text price">
-                            <span class="placement_item_descr">от</span><span class="placement_item_price">6&nbsp;457&nbsp;₽</span>/ ночь
-                        </p>
-                        <div class="star_wrapper">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/empty_star.svg" alt="star" class="star_img">
+                        <div class="placement_item_content_wrapper">
+                            <img src="img/empujar.png" alt="photo" class="placement_img">
+                            <p class="text price">
+                                <span class="placement_item_descr">от</span><span class="placement_item_price">6&nbsp;457&nbsp;₽</span>/ ночь
+                            </p>
+                            <div class="star_wrapper">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/empty_star.svg" alt="star" class="star_img">
+                            </div>
+                            <h3 class="placement_item_heading">
+                                Lagoona empujar la&nbsp;creatividad
+                            </h3>
+                            <p class="text placement_item_city">
+                                Барселона, Испания
+                            </p>
+                            <button class="btn placement_item_btn">Номера</button>
                         </div>
-                        <h3 class="placement_item_heading">
-                            Lagoona empujar la&nbsp;creatividad
-                        </h3>
-                        <p class="text placement_item_city">
-                            Барселона, Испания
-                        </p>
-                        <button class="btn placement_item_btn">Номера</button>
                     </li>
                     <li class="placement_item">
-                        <img src="img/el_retorno.png" alt="photo" class="placement_img">
-                        <p class="text price">
-                            <span class="placement_item_descr">от</span><span class="placement_item_price">6 320 ₽</span>/ ночь
-                        </p>
-                        <div class="star_wrapper">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/empty_star.svg" alt="star" class="star_img">
+                        <div class="placement_item_content_wrapper">
+                            <img src="img/el_retorno.png" alt="photo" class="placement_img">
+                            <p class="text price">
+                                <span class="placement_item_descr">от</span><span class="placement_item_price">6 320 ₽</span>/ ночь
+                            </p>
+                            <div class="star_wrapper">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/empty_star.svg" alt="star" class="star_img">
+                            </div>
+                            <h3 class="placement_item_heading">
+                                Lagoona el retorno
+                            </h3>
+                            <p class="text placement_item_city">
+                                Барселона, Испания
+                            </p>
+                            <button class="btn placement_item_btn">Номера</button>
                         </div>
-                        <h3 class="placement_item_heading">
-                            Lagoona el retorno
-                        </h3>
-                        <p class="text placement_item_city">
-                            Барселона, Испания
-                        </p>
-                        <button class="btn placement_item_btn">Номера</button>
                     </li>
                     <li class="placement_item">
-                        <img src="img/piadosa.png" alt="photo" class="placement_img">
-                        <p class="text price">
-                            <span class="placement_item_descr">от</span><span class="placement_item_price">6&nbsp;505&nbsp;₽</span>/ ночь
-                        </p>
-                        <div class="star_wrapper">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
+                        <div class="placement_item_content_wrapper">
+                            <img src="img/piadosa.png" alt="photo" class="placement_img">
+                            <p class="text price">
+                                <span class="placement_item_descr">от</span><span class="placement_item_price">6&nbsp;505&nbsp;₽</span>/ ночь
+                            </p>
+                            <div class="star_wrapper">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                            </div>
+                            <h3 class="placement_item_heading">
+                                Lagoona mentira piadosa
+                            </h3>
+                            <p class="text placement_item_city">
+                                Барселона, Испания
+                            </p>
+                            <button class="btn placement_item_btn">Номера</button>
                         </div>
-                        <h3 class="placement_item_heading">
-                            Lagoona mentira piadosa
-                        </h3>
-                        <p class="text placement_item_city">
-                            Барселона, Испания
-                        </p>
-                        <button class="btn placement_item_btn">Номера</button>
                     </li>
                     <li class="placement_item">
-                        <img src="img/siempre.png" alt="photo" class="placement_img">
-                        <p class="text price">
-                            <span class="placement_item_descr">от</span><span class="placement_item_price">6&nbsp;824&nbsp;₽</span>/ ночь
-                        </p>
-                        <div class="star_wrapper">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/full_star.svg" alt="star" class="star_img">
-                            <img src="img/empty_star.svg" alt="star" class="star_img">
+                        <div class="placement_item_content_wrapper">
+                            <img src="img/siempre.png" alt="photo" class="placement_img">
+                            <p class="text price">
+                                <span class="placement_item_descr">от</span><span class="placement_item_price">6&nbsp;824&nbsp;₽</span>/ ночь
+                            </p>
+                            <div class="star_wrapper">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/full_star.svg" alt="star" class="star_img">
+                                <img src="img/empty_star.svg" alt="star" class="star_img">
+                            </div>
+                            <h3 class="placement_item_heading">
+                                Lagoona suerte sigui&oacute; siempre
+                            </h3>
+                            <p class="text placement_item_city">
+                                Барселона, Испания
+                            </p>
+                            <button class="btn placement_item_btn">Номера</button>
                         </div>
-                        <h3 class="placement_item_heading">
-                            Lagoona suerte sigui&oacute; siempre
-                        </h3>
-                        <p class="text placement_item_city">
-                            Барселона, Испания
-                        </p>
-                        <button class="btn placement_item_btn">Номера</button>
                     </li>
                     <li class="placement_item">
-                        <a href="#" class="placement_item_link"></a>
+                        <a href="#" class="placement_item_link">Посмотреть все варианты</a>
                     </li>
                 </ul>
             </div>
